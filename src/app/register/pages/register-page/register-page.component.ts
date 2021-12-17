@@ -23,11 +23,11 @@ export class RegisterPageComponent extends BaseFormPageModel {
     this.form.setClass('')
       .setSendMethod(this.httpService.post.bind(this.httpService)).setSendRoute('User')
       .addRow(new RowModel()
-        .addCol(new ColModel().setCol(5).setInput(new InputModel().asName().asRequired()))
-        .addCol(new ColModel().setCol(3).setInput(new InputModel().asTelephone())))
+        .addCol(new ColModel().setCol(7).setInput(new InputModel().asName().asRequired()))
+        .addCol(new ColModel().setCol(5).setInput(new InputModel().asTelephone())))
       .addRow(new RowModel()
-        .addCol(new ColModel().setCol(5).setInput(new InputModel().asEmail().asRequired()))
-        .addCol(new ColModel().setCol(3).setInput(new InputModel().asBirth().asRequired())));
+        .addCol(new ColModel().setCol(7).setInput(new InputModel().asEmail().asRequired()))
+        .addCol(new ColModel().setCol(5).setInput(new InputModel().asBirth().asRequired())));
   }
 
   ngOnInit(): void {

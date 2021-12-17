@@ -1,4 +1,4 @@
-<p>register-page works!</p>
+<!-- <p>register-page works!</p>
 
 <button (click)="deleteMethod()">Deletar</button>
 
@@ -8,7 +8,7 @@
 
 <button (click)="updateMethod()">Atualizar</button>
 
-<button (click)="cleanMethod()">Clear</button>
+<button (click)="cleanMethod()">Clear</button> -->
 
 <p>{{user.name}}</p>
 <p>{{user.cpf}}</p>
@@ -21,7 +21,15 @@
     <div class="container">
         <h3>Cadastre seus dados para receber novas informações sobre o Everaldo!</h3>
         <app-form [form]="form"></app-form>
+
+        
     </div>    
+    <div class="container">
+        <h1 class="text-center">Grafico de Animais</h1>
+        <div class="block">
+            <app-bar-chart></app-bar-chart>
+        </div>
+    </div>
 </section>
 
 

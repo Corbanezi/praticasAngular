@@ -54,7 +54,7 @@ export class FormModel{
                 let value: string | File = col.input.value;
                 let dirtyField: boolean = value != null && value != undefined && value != '';
                 if (dirtyField) {
-                    hasDirtyFields = confirm('Há campos preenchidos veve, deseja mesmo seguir em frente?');
+                    hasDirtyFields = true;
                     return;    
                 }
             })
